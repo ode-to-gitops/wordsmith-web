@@ -12,6 +12,12 @@ jobs:
   build-image:
     name: Build Image
     runs-on: ubuntu-latest
+    
+#NEW: (START) ##########################################################
+    permissions:
+      pull-requests: write # needed to create and update comments in PRs
+#NEW: (END) ############################################################
+    
     steps:
             
       -  name: Login to GHCR

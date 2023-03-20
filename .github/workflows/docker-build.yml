@@ -8,11 +8,6 @@ on:
       - main
   pull_request:
 
-#NEW: (START) ##########################################################
-permissions:
-  pull-requests: write # needed to create and update comments in PRs
-#NEW: (END) ############################################################
-
 jobs:
   build-image:
     name: Build Image

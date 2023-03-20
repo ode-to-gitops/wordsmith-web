@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ode-to-gitops/wordsmith-web:latest
+          tags: ghcr.io/ode-to-gitops/wordsmith-web:latest

@@ -8,4 +8,4 @@ jobs:
     name: Scan
     uses: ode-to-gitops/actions/.github/workflows/reusable-trivy.yaml@main
     with:
-      image: 'ghcr.io/ode-to-gitops/wordsmith-web:latest'
+      image: ghcr.io/ode-to-gitops/wordsmith-web:latest

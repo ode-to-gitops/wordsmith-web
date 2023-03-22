@@ -1,0 +1,11 @@
+name: Call Trivy
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  scan:
+    name: Scan
+    uses: ode-to-gitops/actions/.github/workflows/reusable-trivy.yaml@main
+    with:
+      image: 'ghcr.io/ode-to-gitops/wordsmith-web:latest'
